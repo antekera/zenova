@@ -1,5 +1,5 @@
-import { Contactos } from '@/components/home/Contactos';
-import { Hero } from '@/components/home/Hero';
+import { Contactos } from '@/components/sections/home/Contactos';
+import { Hero } from '@/components/sections/home/Hero';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
