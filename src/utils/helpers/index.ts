@@ -1,0 +1,1 @@
+export { scrollToSection } from './scrollToSection';
