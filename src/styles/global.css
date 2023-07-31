@@ -1,21 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background: #e0f2fe;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  @apply text-slate-700 antialiased;
+}
 
 a {
-  @apply text-blue-700;
+  @apply text-blue-700 ease-in-out duration-300;
 }
 
 a:hover {
-  @apply border-b-2 border-blue-700;
+  @apply border-blue-700;
 }
 
-@tailwind components;
-
-@tailwind utilities;
-
-.content p {
-  @apply my-6;
+p {
+  @apply text-gray-700 text-base leading-6;
 }
 
-.content ul {
-  @apply my-6;
+.container {
+  @apply px-3 md:px-5 mx-auto;
+}
+
+.row {
+  @apply flex flex-wrap;
+}
+
+.header-hero::before {
+  content: "";
+  z-index: -1;
+  opacity: 0.75;
+  @apply absolute top-0 left-0 w-full h-full bg-gradient-to-t from-green-400 via-blue-500 to-slate-200;
+}
+
+.collapse.show {
+  @apply block;
+}
+
+.gradient-btn {
+  @apply ease-in-out duration-300 text-white text-base;
+  background-image: linear-gradient(
+    to right,
+    #0067f4 0%,
+    #2bdbdc 50%,
+    #0067f4 100%
+  );
+  background-size: 200% auto;
+  overflow: hidden;
+}
+
+.gradient-btn:hover {
+  background-position: right center;
+  @apply shadow-xl;
+}
+
+.title {
+  line-height: 55px;
+  @apply mb-4 text-4xl font-semibold text-gray-900;
+}
+
+.services-title {
+  @apply mb-2 text-2xl font-medium text-gray-900;
+}
+
+.single-form textarea,
+.single-form input {
+  @apply w-full px-6 py-3 mb-1 duration-300 bg-white border border-gray-300 rounded;
+}
+.single-form textarea:focus,
+.single-form input:focus {
+  @apply border-blue-600 outline-none;
+}
+.form-message.error {
+  @apply text-red-500;
+}
+.form-message.success {
+  @apply text-green-400;
+}
+
+.footer-social li a {
+  @apply inline-block mr-2 text-2xl text-gray-800 duration-300;
+}
+.footer-social li a:hover {
+  @apply text-blue-600;
+}
+.footer-title {
+  @apply mb-5 text-sm font-bold text-gray-700;
+}
+.footer-link ul li a {
+  @apply inline-block mb-3 font-medium text-gray-900 duration-300;
+}
+.footer-link ul li a:hover {
+  @apply text-blue-600;
+}
+
+.btn {
+  @apply flex rounded-full px-4 md:px-6 py-2 text-white duration-300;
+}
+
+.back-to-top {
+  @apply fixed bottom-0 right-0 z-20 flex items-center justify-center w-10 h-10 mb-8 mr-8 text-white duration-300 bg-blue-600 rounded;
+}
+
+.scrolling-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-auto {
+  -webkit-overflow-scrolling: auto;
+}
+
+/* Icons*/
+.material-symbols-rounded {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 40;
 }
