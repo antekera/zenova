@@ -5,7 +5,7 @@ export function Newsletter() {
         <img src="assets/images/call-to-action.png" alt="call-to-action" />
       </div>
 
-      <div className="container-fluid">
+      <div>
         <div className="row justify-end">
           <div className="w-full lg:w-1/2">
             <div className="call-action-content mx-auto py-32 text-center">

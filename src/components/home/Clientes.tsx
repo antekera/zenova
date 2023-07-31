@@ -1,6 +1,6 @@
 export function Clientes() {
   return (
-    <section id="clientes" className="testimonial-area py-120">
+    <section id="clientes" className="testimonial-area">
       <div className="container">
         <div className="row justify-center">
           <div className="mx-4 w-full lg:w-1/2">

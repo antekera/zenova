@@ -1,12 +1,12 @@
 export function Productos() {
   return (
-    <section id="productos" className="services-area py-120 relative">
+    <section id="productos" className="services-area relative">
       <div className="container">
         <div className="flex">
           <div className="mx-4 w-full lg:w-1/2">
             <div className="section-title pb-10">
               <h4 className="title">Crafted For</h4>
-              <p className="text">
+              <p>
                 Stop wasting time and money designing and managing a website
                 that doesn’t get results. Happiness guaranteed!
               </p>
