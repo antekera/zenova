@@ -102,7 +102,7 @@ p {
 }
 
 .btn {
-  @apply flex rounded-full px-4 md:px-6 py-2 text-white duration-300;
+  @apply flex rounded-full px-3 sm:px-4 md:px-6 py-2 text-white duration-300;
 }
 
 .back-to-top {
