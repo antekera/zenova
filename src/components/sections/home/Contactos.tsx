@@ -1,4 +1,5 @@
 import { Logo } from '@/components';
+import { SocialLinks } from '@/components/SocialLinks';
 
 export function Contactos() {
   return (
@@ -33,7 +34,8 @@ export function Contactos() {
                 </span>
                 <span>Huechuraba, Región Metropolitana 🇨🇱</span>
               </p>
-              <Logo className="mx-auto my-6 h-auto w-36 md:w-auto" />
+              <SocialLinks />
+              <Logo className="mx-auto mt-10 h-auto w-36 md:w-auto" />
             </div>
           </div>
         </div>

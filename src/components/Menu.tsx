@@ -37,7 +37,7 @@ export function Menu() {
         className="mb-1 mr-4 py-3"
         onClick={() => scrollToSection('inicio')}
       >
-        <LogoText className="h-auto w-36 md:w-auto" />
+        <LogoText className="h-auto w-44 md:w-auto" />
       </button>
       <div
         className={`${
@@ -65,7 +65,7 @@ export function Menu() {
           ))}
         </ul>
       </div>
-      <div className="items-center justify-end text-sm sm:text-base lg:flex">
+      <div className="items-center justify-end text-xs sm:text-base lg:flex">
         <a
           aria-label="Chat en WhatsApp"
           rel="noopener noreferrer"
